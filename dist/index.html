@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content= "width=device-width", initial-scale= "1.0">
+    <meta name= "descrition" content= "A simple and easy to use calculator to calculate tips based on service Recieved"> 
+    <meta name= "keywords" content= "tips, tip calculator, calculate tips in rand, rand, service tips">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Tips Calculator | Calculator</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Tips Calculator</h1>
+
+    <div class="parent">
+
+        <div id="error-handling"></div>
+
+        <h3>Bill Amount</h3>
+
+        R<input id="bill-amount" type="number" placeholder="Bill Amount">
+
+        <h3>Rate the service</h3>
+
+        <select id="quality-of-service">
+            <option disabled selected value="0"><b>Quality Of Service</b></option>
+            <option value="0.2">20&#37; &#45; Outstanding</option>
+            <option value="0.15">15&#37; &#45; Good</option>
+            <option value="0.1">10&#37; &#45; Average</option>
+            <option value="0.05">5&#37; &#45; Bad</option>
+        </select>
+
+    </div>
+
+    <div>
+        <h3>Number of people</h3>
+
+        <input id="number-of-people" type="number" placeholder="Number Of People">
+        <br>
+        <button id="calculate-amount" type="button" onclick="calculateTip()">Calculate Tip</button>
+    </div>
+  
+
+        <div id="tip-total">
+            <sup>R</sup><span id="tip">0.00</span>
+            <small id="each">each</small>
+        </div>
+    </div>
+    </div>
+
+    <script src="tipcalculator.js"></script>
+</body>
+</html>
